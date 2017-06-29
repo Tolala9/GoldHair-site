@@ -1,0 +1,318 @@
+@import "fonts"
+@import "libs"
+@import "vars" 
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1 
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1 
+	&.ishome
+		.site-header
+			min-height: 600px
+			height: 100vh
+			background-color: $brown
+			.top-line
+				padding-top: 29px
+				position: absolute
+				width: 100%
+				z-index: 1
+.h1, .h2, .h3, .h4, .h5, .h6
+	line-height: 1.4
+	text-transform: uppercase
+
+
+.logo	
+	img
+		width: 144px
+		height: auto	
+		margin-left: 45px			
+		box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.51)
+.phone	
+	position: absolute
+	right: 85px
+	top: 40px
+	font-family: firasans-ex
+	font-size: 22px
+	color: #DCDDDC
+	white-space: nowrap
+	padding: 0px 10px
+	line-height: 1.4
+	box-shadow: 0px 0px 0px 1px white inset
+	// box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.51)
+	&:hover
+		text-decoration: none
+		color: white
+		background-color: $accent
+		box-shadow: none
+	.fa
+		color: $dirt-white
+
+
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: #FFF
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.hamburger
+	position: absolute
+	right: 0
+	margin-right: -9px
+	color: white
+	.hamburger-inner, 
+	.hamburger-inner::after, 
+	.hamburger-inner::before
+		border-radius: 0
+		width: 34px
+		background-color: $dirt-white
+	&:hover
+		.hamburger-inner, 
+		.hamburger-inner::after, 
+		.hamburger-inner::before
+			background-color: black
+			opacity: 1
+		
+
+/* Customizing MMenu plugin */
+
+#my-menu
+	background-color: #5A2E15
+	background-image: url("../img/mmenu-bg.png")
+	color: white
+
+
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar>*
+	color: $dirt-white
+.mm-menu .mm-listview>li .mm-next:after
+	color: black
+
+.mm-navbar 
+	height: auto
+	position: relative
+	margin-bottom: 20px
+	.mm-title img
+		width: 144px
+		height: auto		
+		box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.51)
+
+.mm-listview > li, .mm-navbar
+	border: #aeaeae 
+
+.mm-panels>.mm-panel.mm-hasnavbar
+	padding-top: 0
+.mm-menu .mm-listview>li .mm-next:after
+	border-color: white
+.mm-menu .mm-btn::after, .mm-menu .mm-btn::before
+	border-color: white
+.mm-listview 
+	> li
+		> a
+			transition: color .25s ease
+			padding-left: 14%
+			padding-right: 14%
+			&:hover
+				color: $gold
+				&::before
+					color: gold
+			&::before
+				content: "\f20e"
+				font-family: fontawesome
+				margin-right: 10px
+				text-decoration: none
+				font-size: 14px
+				color: white
+				transition: color .25s ease
+		&.active
+			&>a
+				color: $accent
+				&::before
+					color: $accent
+				
+
+.button
+	display: inline-block
+	border: none
+	color: $dirt-white
+	text-decoration: none
+	// background-color: $main-grey
+	padding: 10px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 300
+	letter-spacing: 3px
+	// border: 2px $main-grey solid 
+	box-shadow: 0px 0px 0px 1px white inset
+	border-radius: 0px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($main-grey, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		box-shadow: none
+		text-decoration: none
+		color: $dirt-white
+	&:hover
+		background-color: $accent
+		&::after
+			opacity: .22
+	&:active
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .32
+
+/* Headet text content */
+
+.header-flex
+	display: flex
+	height: 100%
+	position: relative
+	top: 0
+.flex-center	
+	margin: auto
+
+.header-composition	
+	text-align: center
+	position: relative
+	height: 100%
+	margin-top: 30px
+	>p
+		color: $dirt-white
+		margin: 35px auto
+		font-weight: 300
+	.button
+	>.wellcome
+		>p
+			margin: 0px
+			font-size: 14px
+			text-transform: uppercase
+			display: flex
+			align-items: center
+			white-space: nowrap
+			&::before, &::after
+				content: ''
+				height: 1px
+				width: 100%
+				position: relative
+				background-color: white
+				display: inline-block
+			>span
+				color: $dirt-white
+		>.h1
+			font-size: 33px
+			margin: 15px auto
+			font-weight: 600
+			white-space: nowrap
+			border-bottom: 1px solid $main-grey
+			margin: 0
+			line-height: 80px
+
+/* Social icons right */	
+.header-social
+	position: absolute
+	display: flex
+	right: 0
+	height: 100%
+	border-left: $dirt-white 1px solid
+	top: 0
+.soc	
+	margin: auto
+	ul, li
+		margin: 0
+		padding: 0
+		list-style-type: none
+	a
+		color: #2c2c2c
+		font-size: 20px
+		display: block
+		background-color: rgba(#fff, .2)
+		height: 38px
+		width: 38px
+		text-align: center
+		margin: 10px 
+		line-height: 38px
+		border-radius: 20px
+		transition: background-color .25s ease
+		&:hover
+			// background-color: rgba(#fff, .4)
+			background-color: black
+			color: $dirt-white
+
+/* Header Contacts on bottom */			
+.header-contacts
+	position: absolute
+	width: 100%
+	bottom: 0
+	left: 0
+	text-align: center
+	border-top: $dirt-white 1px solid
+	margin: 0
+	padding: 15px
+	font-family: raleway-ex
+	font-weight: 300
+	font-size: 14px
+	color: $dirt-white
+	.fa
+		margin-right: 5px
+		color: $dirt-white
+		font-size: 18px
+
+.number
+	font-family: firasans-ex, sans-serif
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
