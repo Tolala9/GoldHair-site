@@ -3,29 +3,113 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px)
+	.header-composition	
+		.welcome
+			.h1
+				font-size: 55px
+				margin: 0
+				line-height: 90px
+			p	
+				padding-top: 0px
+				span
+					font-size: 18px	
+			strong
+				font-size: 18px
+		p
+			margin: 35px 0px 35px	 0px
+			font-size: 16px
+			padding-bottom: 0px
+	.header-contacts
+		font-size: 16px 
+
 @media only screen and (max-width : 1200px)
-	/**/
+	.header-contacts
+		font-size: 13px 
+
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.header-composition	
+		margin-top: 10px
+		
+	.welcome
+		>p
+			padding-top: 60px
+		h1
+			padding-top: 20px
 
-
+ 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.header-contacts
+		text-align: left
+	.logo
+		img
+			width: 120px
+			margin-left: 36%
+			
 
+	.header-composition	
+		margin-top: 5px
+		
+	.welcome
+		>p
+			padding-top: 20px
+
+		.h1
+			padding-top: 0px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+	.header-composition	
+		.welcome
+			.h1
+				font-size: 27px
+				margin: 0
+				line-height: 45px
+			p	
+				padding-top: 40px
+				span
+					font-size: 14px	
+			strong
+				font-size: 14px
+		p
+			margin: 10px		
+			font-size: 14px
+			padding-bottom: 10px
+	body
+		&.ishome
+			.site-header
+				min-height: 500px
+				height: 100vh
+				.top-line
+					padding-top: 15px
+	.phone
+		top: 27px
+	.logo
+		img
+			width: 120px
+			margin-left: 45px
+	
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
-
+	.header-composition	
+		.welcome
+			.h1
+				font-size: 27px
+				margin: 0
+				line-height: 45px
+			p	
+				padding-top: 20px
+	body
+		&.ishome
+			.site-header
+				min-height: 600px
+	.header-contacts
+		font-size: 12px
 
 /*==========  Mobile First  ==========*/
 

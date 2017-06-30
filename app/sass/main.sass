@@ -2,6 +2,8 @@
 @import "libs"
 @import "vars" 
 
+/* Start configuration */
+
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1 
@@ -50,7 +52,24 @@ body
 	line-height: 1.4
 	text-transform: uppercase
 
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
 
+section
+	background-color: #FFF
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.number
+	font-family: firasans-ex, sans-serif
+/*End Start configuration */
+
+/* Header styles */
 .logo	
 	img
 		width: 144px
@@ -79,19 +98,7 @@ body
 
 
 
-section, header
-	position: relative
-	background-size: cover
-	background-position: center
-
-section
-	background-color: #FFF
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-
+// Menu button
 .hamburger
 	position: absolute
 	right: 0
@@ -165,7 +172,7 @@ section
 				color: $accent
 				&::before
 					color: $accent
-				
+/* End Customizing MMenu plugin */				
 
 .button
 	display: inline-block
@@ -230,7 +237,7 @@ section
 		margin: 35px auto
 		font-weight: 300
 	.button
-	>.wellcome
+	>.welcome
 		>p
 			margin: 0px
 			font-size: 14px
@@ -292,7 +299,7 @@ section
 	position: absolute
 	width: 100%
 	bottom: 0
-	left: 0
+	left: 0  
 	text-align: center
 	border-top: $dirt-white 1px solid
 	margin: 0
@@ -306,8 +313,6 @@ section
 		color: $dirt-white
 		font-size: 18px
 
-.number
-	font-family: firasans-ex, sans-serif
 
 
 
@@ -315,4 +320,5 @@ section
 
 
 
-@import "media" // Всегда в конце
+
+@import "media" 
