@@ -47,6 +47,13 @@
 					font-size: 18px
 				.fa-usd
 					font-size: 16px
+	.s
+		&-interior, &-review, &-partners
+			padding: 8% 0
+		&-interior
+			h2
+				font-size: 25px
+				
 
 @media only screen and (max-width : 1200px)
 	.header-contacts
@@ -55,7 +62,12 @@
 	.carousel-services-item
 		flex-direction: column
 
+	.s
+		&-interior, &-review, &-partners
+			padding: 60px 0
 
+	.fotorama
+		padding-top: 50px 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -67,8 +79,11 @@
 			padding-top: 60px
 		h1
 			padding-top: 20px
+	.fotorama
+		padding-top: 0 
 
- 
+ 	
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.header-contacts
@@ -88,6 +103,7 @@
 
 		.h1
 			padding-top: 0px
+	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -121,7 +137,30 @@
 			width: 120px
 			margin-left: 45px
 	
-
+	.s
+		&-interior
+			padding: 4% 0
+			p, h2
+				text-align: center
+	.fotorama	
+		&__nav
+			&-wrap
+				position: relative
+				bottom: -10px
+				padding: 0 30px
+				width: 100%
+		&__arr-
+			&-next, &-prev
+				&::before
+					font-family: fontawesome
+					font-size: 20px
+	.fotorama--fullscreen .fotorama__fullscreen-icon
+		position: absolute
+		top: 20px
+		right: 20px
+		color: $dirt-white
+	
+	
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	.header-composition	

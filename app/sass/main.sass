@@ -59,6 +59,9 @@ section, header
 
 section
 	background-color: #FFF
+	&.inverse
+		color: #fff
+		background-color: $brown
 
 .img-responsive
 	display: block
@@ -264,6 +267,7 @@ section
 			line-height: 80px
 
 /* Social icons right */	
+
 .header-social
 	position: absolute
 	display: flex
@@ -294,7 +298,8 @@ section
 			background-color: black
 			color: $dirt-white
 
-/* Header Contacts on bottom */			
+/* Header Contacts on bottom */		
+
 .header-contacts
 	position: absolute
 	width: 100%
@@ -313,7 +318,7 @@ section
 		color: $dirt-white
 		font-size: 18px
 
-/* Section_2 services */
+/* Section_1_Services */
 
 $colors: $car-1, $car-2, $car-3
 @for $i from 1 through length($colors) 
@@ -396,7 +401,7 @@ $colors: $car-1, $car-2, $car-3
 
 	.owl-nav
 		position: absolute
-		top: 0
+		top: 40px
 		width: 100%
 		> div
 			width: 64px
@@ -410,7 +415,78 @@ $colors: $car-1, $car-2, $car-3
 				left: 0
 			&.owl-next
 				right: 0
-		
+
+/* Section_2_Interior */
+
+.s
+	&-interior, &-review, &-partners
+		padding: 5% 0
+
+	&-interior
+		p
+			margin: 30px 0
+		h2
+			font-size: 20px
+			border-bottom: 1px solid 
+			display: inline-block
+			margin-bottom: 0
+
+.section-overley
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $brown
+		opacity: 0.8
+
+.fotorama	
+	// background-color: rgba($brown, .4)
+	&__nav
+		&-wrap
+			position: absolute
+			bottom: 10px
+			padding: 0 30px
+			width: 100%
+	&__thumb
+		border: 3px $dirt-white solid
+		transition: border-color .5s ease
+		&-border
+			border-color: $gold
+
+	&__arr-
+		&-next, &-prev
+			&::before
+				font-family: fontawesome
+				font-size: 32px
+		&-next
+			&::before
+				content: '\f04e'
+		&-prev
+			&::before
+				content: '\f04a'
+
+.fotorama__fullscreen-icon
+	position: absolute
+	top: 15px
+	right: 20px
+	&::before
+		font-family: fontawesome
+		font-size: 27px
+		content: '\f047'
+.fotorama--fullscreen .fotorama__nav
+  background-color: rgba(#FFF, 0.01)
+.fotorama--fullscreen .fotorama__fullscreen-icon
+	position: absolute
+	top: 50px
+	right: 80px
+	color: $dirt-white
+.fotorama--fullscreen .fotorama__nav-wrap	
+	position: relative
+
+
 
 
 	
