@@ -53,6 +53,17 @@
 		&-interior
 			h2
 				font-size: 25px
+
+	.callback
+		&-logo
+			img
+				margin-top: 60px
+		.formhead
+			font-size: 24px
+		.button
+			margin-bottom: 60px
+	input, textarea, select
+		margin-bottom: 25px
 				
 
 @media only screen and (max-width : 1200px)
@@ -103,7 +114,22 @@
 
 		.h1
 			padding-top: 0px
-	
+	.s
+		&-call
+			&::before
+				width: 100%
+	.callback
+		margin-left: 20px
+		margin-right: 20px
+		.formhead, p
+			text-align: center
+		select, input,
+		.selectize-control .selectize-input
+			width: 100%
+		button
+			left: 40%
+			
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

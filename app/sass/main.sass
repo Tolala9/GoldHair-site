@@ -20,12 +20,7 @@
 	color: #666
 	opacity: 1
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
+
 
 html, body
 	height: 100%
@@ -62,6 +57,8 @@ section
 	&.inverse
 		color: #fff
 		background-color: $brown
+		&.s-call
+			background-color: #FFF
 
 .img-responsive
 	display: block
@@ -124,8 +121,13 @@ section
 /* Customizing MMenu plugin */
 
 #my-menu
-	background-color: #5A2E15
-	background-image: url("../img/mmenu-bg.png")
+	// background-color: $accent
+	background: rgb(0,0,0); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 66%, rgba(14,8,6,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 66%,rgba(14,8,6,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 66%,rgba(14,8,6,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0e0806',GradientType=0 ); /* IE6-9 */
+	// background-image: url("../img/bg_mmenu/4.jpg")
 	color: white
 
 
@@ -176,13 +178,13 @@ section
 				&::before
 					color: $accent
 /* End Customizing MMenu plugin */				
-
+button
+	background-color: transparent
 .button
 	display: inline-block
 	border: none
 	color: $dirt-white
 	text-decoration: none
-	// background-color: $main-grey
 	padding: 10px 45px
 	font-size: 13px
 	text-transform: uppercase
@@ -416,7 +418,7 @@ $colors: $car-1, $car-2, $car-3
 			&.owl-next
 				right: 0
 
-/* Section_2_Interior */
+/* Section styles */
 
 .s
 	&-interior, &-review, &-partners
@@ -430,6 +432,24 @@ $colors: $car-1, $car-2, $car-3
 			border-bottom: 1px solid 
 			display: inline-block
 			margin-bottom: 0
+	&-call
+		background-size: cover
+		background-repeat: no-repeat
+		&::before
+			content: ''
+			width: 50%
+			right: 0
+			height: 100%
+			position: absolute
+			background-color: rgba($blue, 0.95)
+
+
+
+
+
+/* Section_2_Interior */
+
+
 
 .section-overley
 	&::before
@@ -486,6 +506,125 @@ $colors: $car-1, $car-2, $car-3
 .fotorama--fullscreen .fotorama__nav-wrap	
 	position: relative
 
+
+/* Section_3_Callback */
+input, textarea, select,
+.selectize-control .selectize-input,
+.selectize-control.single .selectize-input.input-active
+	background-color: transparent
+	border: #fff 1px solid
+	border-radius: 0
+	border-bottom: #fff 2px solid
+	padding: 9px 20px
+	margin-bottom: 10px
+	outline: none
+	display: inline-block
+	font-size: 14px
+	text-transform: uppercase
+	color: black
+select,
+.selectize-control .selectize-input
+	padding: 11px 22px
+	color: $dirt-white
+	width: 79%
+	// padding-left: 17px
+.selectize-control .selectize-input
+	box-shadow: none
+	overflow: inherit
+	line-height: inherit
+	text-align: left
+	input
+		font-size: inherit
+.selectize-control.single .selectize-input:after
+	border-color: $dirt-white transparent transparent transparent
+	border-width: 9px 9px 0 9px
+.selectize-dropdown
+	font-size: 14px
+	border: none
+	border-radius: none
+	&-content
+		.option
+			padding: 10px 22px
+			background-color: $dirt-white
+			&.active
+				background-color: $accent
+				color: $dirt-white
+
+
+.success
+	display: none
+	position: absolute
+	top: 0
+	left: -120px
+	right: 0
+	bottom: 0
+	text-transform: uppercase
+	text-decoration: underline
+	letter-spacing: 2px
+	font-weight: bold
+	// display: flex
+	z-index: 10
+	span
+		margin: auto
+	& ~ *
+		transition: all .5s ease
+	&.active
+		& ~ *
+			opacity: .6
+			filter: blur(5px)
+
+.callback
+	// padding: 0 0
+	position: relative
+	&-logo
+		img
+			width: 130px
+			height: auto
+			display: inline-block
+			margin-top: 50px
+	.formhead
+		margin-top: 20px
+		font-size: 20px 
+		font-weight: 800
+		letter-spacing: 1px 
+	p
+		margin-top: 5px
+	select
+		color: $dirt-white
+		width: 79%
+		padding-left: 17px
+		option
+			display: block
+			color: $dirt-white
+			background-color: $accent
+			font-size: 16px
+			border-bottom: 1px #fff solid
+			padding: 20px 40px
+			&:hover
+				background-color: #fff
+
+
+			
+
+	input, textarea
+		color: #fff
+		width: 79%
+
+		&::-webkit-input-placeholder
+			color: $dirt-white
+			opacity: 1
+		&::-moz-placeholder
+			color: $dirt-white
+			opacity: 1
+		&::-ms-input-placeholder
+			color: $dirt-white
+	.button
+		margin-top: 13px
+		margin-bottom: 45px
+		font-size: 14px
+		padding: 9px 45px
+
+			
 
 
 
