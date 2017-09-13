@@ -47,6 +47,9 @@ body
 	line-height: 1.4
 	text-transform: uppercase
 
+.text-center
+	text-align: center
+
 section, header
 	position: relative
 	background-size: cover
@@ -70,6 +73,7 @@ section
 /*End Start configuration */
 
 /* Header styles */
+
 .logo	
 	img
 		width: 144px
@@ -177,7 +181,8 @@ section
 				color: $accent
 				&::before
 					color: $accent
-/* End Customizing MMenu plugin */				
+/* End Customizing MMenu plugin */	
+
 button
 	background-color: transparent
 .button
@@ -443,13 +448,11 @@ $colors: $car-1, $car-2, $car-3
 			position: absolute
 			background-color: rgba($blue, 0.95)
 
-
+/* END Section styles */
 
 
 
 /* Section_2_Interior */
-
-
 
 .section-overley
 	&::before
@@ -508,6 +511,7 @@ $colors: $car-1, $car-2, $car-3
 
 
 /* Section_3_Callback */
+
 input, textarea, select,
 .selectize-control .selectize-input,
 .selectize-control.single .selectize-input.input-active
@@ -581,7 +585,7 @@ select,
 			width: 130px
 			height: auto
 			display: inline-block
-			margin-top: 50px
+			margin-top: 60px
 	.formhead
 		margin-top: 20px
 		font-size: 20px 
@@ -620,9 +624,69 @@ select,
 			color: $dirt-white
 	.button
 		margin-top: 13px
-		margin-bottom: 45px
+		margin-bottom: 60px
 		font-size: 14px
 		padding: 9px 45px
+
+/* Section_4 Client Review  */
+
+
+
+.owl-dots
+	width: 100%
+	text-align: center
+	display: inline-block
+	margin-top: 30px
+	.owl-dot
+		width: 8px
+		height: 8px
+		background-color: #fff
+		border-radius: 10em
+		display: inline-block
+		margin: 5px
+		transition: background-color .5s ease, transform .5s ease
+		&.active
+			background-color: $accent
+			transform: scale(1.4)
+.review
+	cursor: pointer
+	&-stars
+		color: $accent
+		margin: 5px
+		font-size: 18px
+		.fa
+			margin-right: 4px
+	&-header
+		font-size: 20px
+	&-data
+		opacity: 0.6
+
+.quotes
+	position: absolute
+	width: 100%
+	&::before, &::after
+		content: ",,"
+		position: absolute
+		top: 80px
+		font-size: 70px
+		color: $accent
+		font-family: 'Times New Roman', serif
+		line-height: 0
+		transform: rotate(180deg)
+		display: block
+	&::before
+		top: 230px
+		left: -40px
+	&::after
+		right: -30px
+		top: 50px
+		transform: rotate(0)
+.h-first
+	margin-top: 0
+	margin-bottom: 30px
+
+
+
 
 			
 

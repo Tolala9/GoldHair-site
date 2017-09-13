@@ -75,6 +75,29 @@ $('.carousel-services').owlCarousel({
 		return false;
 	});
 
+	$('.reviews').owlCarousel({
+		loop: true,
+		items: 1,
+		smartSpeed: 700,
+		nav: false,
+		dots: true,
+		autoplay: true,
+		// animateOut: 'fadeOut',
+		autoplayTimeout: 6000,
+		autoplayHoverPause:false,
+		autoHeight: true
+	});
+
+	/*Sloww scroll on menu parts*/
+	$(document).ready(function(){
+		$(".main-mnu").on("click","a", function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 1500);
+		});
+	});
+
 	
 
 
