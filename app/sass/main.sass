@@ -447,6 +447,9 @@ $colors: $car-1, $car-2, $car-3
 			height: 100%
 			position: absolute
 			background-color: rgba($blue, 0.95)
+	&-partners.section-overley
+		&::before
+			background-color: $dirt-white
 
 /* END Section styles */
 
@@ -684,7 +687,54 @@ select,
 .h-first
 	margin-top: 0
 	margin-bottom: 30px
+	font-size: 20px
+	font-weight: 800 
+	letter-spacing: 1px
 
+/* Section_5_Partners */
+.s-partners
+	.h2
+		color: $accent
+		margin-top: 0
+		font-size: 20px
+		font-weight: 800
+		letter-spacing: 1px
+
+.partners
+	.partner
+		height: 100%
+		display: flex
+		margin: auto
+	.owl-stage
+		display: flex
+		height: 150px
+		margin-top: 30px
+	.owl-item
+		img
+			max-width: 100%
+			max-height: 100%
+			width: 170px
+			display: inline-block
+			margin: auto
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 2
+		>div
+			position: absolute
+			top: 79px
+			color: $main-grey
+			font-size: 30px
+			padding: 0 10px
+			&:hover
+				color: $accent
+			&.owl-prev
+				left: -60px
+			&.owl-next
+				right: -60px
+
+		
 
 
 

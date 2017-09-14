@@ -98,6 +98,32 @@ $('.carousel-services').owlCarousel({
 		});
 	});
 
+	$('.partners').owlCarousel({
+		loop: true,
+		smartSpeed: 700,
+		dots: false,
+		nav: true,
+		navText: ['<i class="fa fa-backward" aria-hidden="true"></i>','<i class="fa fa-forward" aria-hidden="true"></i>'],
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 4
+			},
+			1600: {
+				items: 4
+			}
+		}
+	});
+
 	
 
 
