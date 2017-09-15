@@ -101,12 +101,12 @@ section
 		color: $dirt-white
 
 
-
 // Menu button
 .hamburger
 	position: absolute
 	right: 0
-	margin-right: -9px
+	// margin-right: -9px
+	padding: 14px 6px 0 0 
 	color: white
 	.hamburger-inner, 
 	.hamburger-inner::after, 
@@ -325,6 +325,8 @@ button
 		color: $dirt-white
 		font-size: 18px
 
+/*END Header styles */
+
 /* Section_1_Services */
 
 $colors: $car-1, $car-2, $car-3
@@ -385,8 +387,6 @@ $colors: $car-1, $car-2, $car-3
 		.button 
 			padding: 5px 20px
 			
-				
-	
 	&-list
 		margin: 0
 		padding: 0
@@ -423,7 +423,10 @@ $colors: $car-1, $car-2, $car-3
 			&.owl-next
 				right: 0
 
-/* Section styles */
+/* END Section_1_Services */
+
+
+/* !!!!Section styles!!!! */
 
 .s
 	&-interior, &-review, &-partners
@@ -449,9 +452,9 @@ $colors: $car-1, $car-2, $car-3
 			background-color: rgba($blue, 0.95)
 	&-partners.section-overley
 		&::before
-			background-color: $dirt-white
+			background-color: #b0b0b0
 
-/* END Section styles */
+/* END Section styles*/
 
 
 
@@ -512,6 +515,7 @@ $colors: $car-1, $car-2, $car-3
 .fotorama--fullscreen .fotorama__nav-wrap	
 	position: relative
 
+/*END Section_2_Interior */
 
 /* Section_3_Callback */
 
@@ -631,9 +635,10 @@ select,
 		font-size: 14px
 		padding: 9px 45px
 
+/* END Section_3_Callback */
+
+
 /* Section_4 Client Review  */
-
-
 
 .owl-dots
 	width: 100%
@@ -690,6 +695,7 @@ select,
 	font-size: 20px
 	font-weight: 800 
 	letter-spacing: 1px
+/* END Section_4 Client Review  */
 
 /* Section_5_Partners */
 .s-partners
@@ -734,17 +740,98 @@ select,
 			&.owl-next
 				right: -60px
 
+/* END Section_5_Partners */
+
+
+/* Footer */
+.main-footer
+	padding: 2% 0 
+	color: $dirt-white
+	font-size: 14px
+.footer-column
+	margin: 15px 0
+	p
+		position: relative
+		font-size: 15px
+.logo-footer
+	width: 130px
+	height: auto
+	+ p
+		color: $light-grey	
+		font-weight: 600	
+		padding: 0
+		margin-bottom: 15px
+		margin-top: 15px
+		position: relative
+		left: -15px
+		text-align: center
+.footer-social
+	// margin-top: 40px
+	.soc
+		li
+			display: inline-block
+			a
+				margin: 0 2px 0 2px
+				color: $dirt-white
+
+.footer-menu
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li.active
+			a
+				color: $gold
+				&::before
+					color: $gold
+		a
+			color: $dirt-white
+			transition : color .25s ease
+			display: inline-block
+			padding: 4px 0
+			text-decoration: underline
+			padding-left: 20px
+			position: relative
+			&:hover, &:focus
+				color: $gold
+				&::before
+					color: $gold
+			&::before
+				position: absolute
+				content: '\f20e'
+				font-family: fontawesome
+				left: 0
+				transition: color .5s ease
+
+.footer-addr
+	position: relative
+	font-size: 15px
+	padding-left: 25px
+	margin: 0 0 20px
+	.fa
+		position: absolute
+		left: 0
+		top: 5px
+		font-size: 22px
+		color: $light-grey
+	.footer-phone
+		font-size: 22px
+		white-space: nowrap
 		
+.footer-addr.footer-phone
+	margin-top: 30px
+	.fa
+		top: 7px
+		left: 3px
 
+.map
+	min-height: 250px
+	opacity: .8
+	transition: opacity .5s ease
+	&:hover
+		opacity: 1
 
-
-			
-
-
-
-	
-
-
+/* END Footer */
 
 
 @import "media" 
