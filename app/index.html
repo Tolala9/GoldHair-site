@@ -29,6 +29,10 @@
 </head>
 
 <body class="ishome">
+<!-- Page Preloader -->
+	<div class="preloader">
+		<div class="pulse"></div>
+	</div>
 
 	<div id="my-page">
 
@@ -49,11 +53,11 @@
 									<nav id="my-menu">
 										<ul>
 											<li ><a href="#header">Home</a></li>
-											<li><a href="#sevices">Sevices</a></li>
-											<li><a href="#">Our interior</a></li>
-											<li><a href="#">Leave an app</a></li>
-											<li><a href="#">Customer feedback</a></li>
-											<li><a href="#">Our specialists</a></li>
+											<li><a href="#serv">Sevices</a></li>
+											<li><a href="#interior">Our interior</a></li>
+											<li><a href="#contact">Leave an app</a></li>
+											<li><a href="#feedback">Customer feedback</a></li>
+											<li><a href="#partners">Our partners</a></li>
 											<li><a href="#">News</a></li>
 											<li><a href="#">Priсes</a>
 												<ul>
@@ -124,7 +128,7 @@
 						<div id="my-content"></div>
 
 <!--  Section_1_Services  -->
-				<section id="sevices" class="s-sevices">
+				<section id="serv" class="s-sevices">
 					<div class="owl-carousel carousel-services">
 						
 						<div class="carousel-services-item">
@@ -209,7 +213,7 @@
 <!-- END Section_1_Services  -->
 
 <!-- Section_2_Interior -->
-					<section class="s-interior inverse section-overley" style="background-image: url(img/interior_dark/3.jpg);">
+					<section id="interior" class="s-interior inverse section-overley" style="background-image: url(img/interior_dark/3.jpg);">
 						
 						<div class="container">
 							<div class="row">
@@ -250,7 +254,7 @@
 <!-- END Section_2_Interior -->
 
 <!-- Section_3_Callback -->
-					<section class="s-call inverse" style="background-image: url(img/callback_bg.jpg);">
+					<section id="contact" class="s-call inverse" style="background-image: url(img/callback_bg.jpg);">
 
 						<div class="container">
 							<div class="row">
@@ -301,7 +305,7 @@
 <!-- END Section_3_Callback -->
 
 <!--Section_4 Client Review  -->
-					<section class="s-review inverse section-overley" style="background-image: url(img/review_bg.jpg);">
+					<section id="feedback" class="s-review inverse section-overley" style="background-image: url(img/review_bg.jpg);">
 						<div class="container">
 							<div class="row">
 								
@@ -356,7 +360,7 @@
 <!-- END Section_4 Client Review  -->
 
 <!-- Section_5_Partners -->
-					<section class="s-partners section-overley" style="background-image: url(img/partners_bg.jpg);">
+					<section id="partners" class="s-partners section-overley" style="background-image: url(img/partners_bg.jpg);">
 						
 						<div class="container">
 							<div class="row">
@@ -454,14 +458,14 @@
 										<div class="col-lg-3 col-sm-4 col-xs-12">
 											<div class="footer-column">
 
-											<nav class="footer-menu">
+											<nav class="footer-menu main-mnu">
 												<ul>
-													<li class="active"><a href="#">Home</a></li>
-													<li><a href="#">Services</a></li>
-													<li><a href="#">Our interior</a></li>
-													<li><a href="#">Leave an app</a></li>
-													<li><a href="#">Coustomer feedback</a></li>
-													<li><a href="#">Partners</a></li>
+													<li class="active"><a href="#header">Home</a></li>
+													<li><a href="#serv">Services</a></li>
+													<li><a href="#interior">Our interior</a></li>
+													<li><a href="#contact">Leave an app</a></li>
+													<li><a href="#feedback">Coustomer feedback</a></li>
+													<li><a href="#partners">Partners</a></li>
 													<li><a href="#">News</a></li>
 													<li><a href="#">Prices</a></li>
 												</ul>
@@ -485,11 +489,15 @@
 											<div class="footer-column">
 
 											<div class="map">
-												<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yqmJOP5lP3kvmoppdY-mjdnsr10" width="100%" height="250"></iframe>
+												<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yqmJOP5lP3kvmoppdY-mjdnsr10" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+												<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3024.1516591983295!2d-74.00814272445312!3d40.71467776893208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1505473297181" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 											</div>
 											
 											</div>
 										</div>
+
+											
+
 									</div>
 								</div>
 							</div>
@@ -497,6 +505,8 @@
 						</div>
 <!-- END Footer -->
 			</div>
+
+			<div class="top" title="UP"><i class="fa fa-backward"></i></div>
 			
 	
 	<link rel="stylesheet" href="css/main.min.css">

@@ -8,8 +8,9 @@ $(function() {
 				 },
 	 	navbar: {
 	 		title: '<img src="img/logo.png" alt="Gold Hair">'
-	 	}
-	 	
+	 	},
+	 	"pageScroll": true
+
 	});
 
 	var api = $('#my-menu').data('mmenu');
@@ -124,11 +125,37 @@ $('.carousel-services').owlCarousel({
 		}
 	});
 
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > $(this).height()) {
+			$('.top').addClass('active');
+		} else {
+			$('.top').removeClass('active');
+		}
+	});
+	$('.top').click(function() {
+		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+	});
+
+	$(window).on('load', function() {
+		$('.preloader').delay(1000).fadeOut('slow');
+	});
+
+	/*Sloww scroll on menu parts*/
+$(document).ready(function(){
+	$(".main-mnu").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+});
+
 	
 
 
-	
 });
 	
+
+
 
 
