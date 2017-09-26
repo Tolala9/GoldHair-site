@@ -7,6 +7,12 @@ You can [check out](http://luilmode.000webhostapp.com/) site on free Host [GoldH
 The site for barbershop but it can customize for other salons that propose their services.
 
 ### Site content: 
+
+- [x] All site are adaptive & responsive on all divices:
+	- Mobile S/M/L - 320px/375px/425px
+	- Tablet - 768px
+	- Laptop/laptop L/ - 1024px/1440px
+	
 1. Header with whole info 
 	- (title, social network, contact phone[allow click & call], address, menu slide)
 2. Secton Services with barber shop services
